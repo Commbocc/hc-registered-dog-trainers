@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "iframe-resizer/js/iframeResizer.contentWindow";
 
-createApp(App).mount('#app')
+createApp(App).mount("#app");
