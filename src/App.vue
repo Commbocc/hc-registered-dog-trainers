@@ -8,7 +8,7 @@ fetchTrainers();
 
 const containerClass = import.meta.env.DEV
   ? "py-5 container"
-  : "container-fluid py-2";
+  : "container-fluid pt-2";
 </script>
 
 <template>
