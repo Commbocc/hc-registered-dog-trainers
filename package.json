@@ -1,6 +1,6 @@
 {
   "name": "hc-registered-dog-trainers",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,16 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vueuse/core": "^9.1.1",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.2.0",
-    "iframe-resizer": "^4.3.2",
-    "vue": "^3.2.37"
+    "@vueuse/core": "^10.7.2",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "iframe-resizer": "^4.3.9",
+    "vue": "^3.4.15"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7",
-    "vue-tsc": "^0.39.5"
+    "@vitejs/plugin-vue": "^5.0.3",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.27"
   }
 }

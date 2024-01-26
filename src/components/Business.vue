@@ -38,7 +38,6 @@ const bizTrainers = computed<Trainer[]>(() =>
       >{{ biz.fields.Services }}
     </small>
 
-    <!-- <div class="card"> -->
     <details
       v-if="biz.fields.Trainers?.length"
       :open="smAndLarger"
