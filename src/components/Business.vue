@@ -16,7 +16,7 @@ const bizTrainers = computed<Trainer[]>(() =>
 </script>
 
 <template>
-  <div class="mb-5">
+  <div class="mb-3">
     <div class="d-flex w-100 justify-content-between align-items-sm-center">
       <h4 class="mb-1 me-1">
         {{ biz.fields.Name }}
