@@ -9,16 +9,21 @@ export const trainers = reactive<{
   data: [],
 });
 
-export async function fetchTrainers() {
+export async function fetchTrainers(offset?: string) {
   trainers.loading = true;
   try {
     const { data } = await airtable.get("/tblEQkoZCBZ4lRjlm", {
       params: {
         view: "AppView",
+        offset: offset,
       },
     });
 
-    trainers.data = data.records;
+    if (data.offset) {
+      fetchTrainers(data.offset);
+    }
+
+    trainers.data.push(...data.records);
   } catch (error) {
     console.error(error);
   } finally {
