@@ -5,7 +5,15 @@ const props = defineProps<{ trainer: Trainer }>();
 <template>
   <div class="list-group-item">
     <div class="d-flex w-100 justify-content-between align-items-center">
-      <h5 class="mb-1">{{ trainer.fields.Name }}</h5>
+      <h5 v-if="trainer.fields.Website" class="mb-1">
+        <a :href="`${trainer.fields.Website}`" target="_top">{{
+          trainer.fields.Name
+        }}</a>
+      </h5>
+
+      <h5 v-else class="mb-1 me-1">
+        {{ trainer.fields.Name }}
+      </h5>
 
       <a
         v-if="trainer.fields.Phone"

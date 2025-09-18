@@ -8,6 +8,7 @@ interface Business {
     Services?: string;
     Phone?: string;
     Location?: string;
+    Website?: string;
   };
 }
 
@@ -20,5 +21,6 @@ interface Trainer {
     Services?: string;
     Phone?: string;
     Location?: string;
+    Website?: string;
   };
 }

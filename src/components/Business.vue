@@ -18,7 +18,13 @@ const bizTrainers = computed<Trainer[]>(() =>
 <template>
   <div class="mb-3">
     <div class="d-flex w-100 justify-content-between align-items-sm-center">
-      <h4 class="mb-1 me-1">
+      <h4 v-if="biz.fields.Website" class="mb-1 me-1">
+        <a :href="`${biz.fields.Website}`" target="_top">{{
+          biz.fields.Name
+        }}</a>
+      </h4>
+
+      <h4 v-else class="mb-1 me-1">
         {{ biz.fields.Name }}
       </h4>
 
